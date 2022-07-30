@@ -1,18 +1,127 @@
 doctype html
-html(lang="en")
+html(lang="es-CO")
   head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Airline
-    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet", href="assets/css/style.css")
   body
-    container.f-width
-      header
-        container.m-width
-          nav
-            .nav_logo
-              h2.
-                AIRLINE
-            .nav_menu
-              
+    header
+      .m-width
+        nav
+          .nav__logo
+            h1 AIRLINE
+          .nav__menu
+            ul
+              li
+                a(href="#") en
+                  img(src="assets/img/arrow-down.svg")
+                ul.nav_menu--drop-menu
+                  li
+                    a(href="#") RU - Russian
+                  li
+                    a(href="#") DE - German
+                  li
+                    a(href="#") FR - French
+              li
+                a(href="#") Home
+              li
+                a(href="#") About
+              li
+                a(href="#") Destinations
+              li
+                a(href="#") Contact
+        .header__content
+          h2.
+            Visit Canada with prices from $800
+          p.
+            Prepare your bags and forget your worries to start enjoying your holidays in this fantastic country
+          a.button Buy now
+      main
+        .m-width
+          h3 Offers
+          section
+            article.card#trip-moscow
+              figure
+                img(src="assets/img/moscow.jpg")
+              p.card__title Trip to Moscow
+              p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
+                a.card__info__link(href="#") more
+              p.card__price Price $600,86
+            article.card#trip-puerto_rico
+              figure
+                img(src="assets/img/puerto-rico.jpg")
+              p.card__title Trip to Puerto Rico
+              p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
+                a.card__info__link(href="#") more
+              p.card__price Price $600,86
+            article.card#trip-honduras
+              figure
+                img(src="assets/img/honduras.jpg")
+              p.card__title Trip to Honduras
+              p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
+                a.card__info__link(href="#") more
+              p.card__price Price $600,86
+            section.card-chosen
+              p#chosen-dest
+              .card-chosen__divider
+              p.card_chosen__text
+          section.trip-menu
+            h4 Menu
+            ul.trip-menu__ul
+              li
+                a(href="#") Check-in
+              li
+                a(href="#") Manage My Booking
+              li
+                a(href="#") Search
+              li
+                a(href="#") Destinations
+              li
+                a(href="#") Members
+      footer
+        .m-width
+          section.social-nav
+            p.social-nav__title.
+              Follow us
+            .social-nav__icons
+              figure
+                img.social-nav__icons--facebook(src="assets/img/facebook.svg")
+              figure
+                img.social-nav__icons--instagram(src="assets/img/instagram.svg")
+              figure
+                img.social-nav__icons--twitter(src="assets/img/twitter.svg")
+          section.footer-nav
+            .footer-nav__menu
+              p.footer-nav__menu__title About Us
+              p.footer-nav__menu__text We want to help passengers to reach their destinations.
+            .footer-nav_menu
+              p.footer-nav__menu__title Explore
+              ul.footer-nav__menu__ul
+                li
+                  a(href="#") Home
+                li
+                  a(href="#") Destinations
+                li
+                  a(href="#") About
+            .footer-nav__menu
+              p.footer-nav__menu__title Information
+              ul.footer-nav__menu__ul
+                li
+                  a(href="#") More search
+                li
+                  a(href="#") Blog
+                li
+                  a(href="#") Testimonials
+            .footer-nav__menu
+              p.footer-nav__menu__title Services
+              ul.footer-nav__menu__ul
+                li
+                  a(href="#") Manage My Bookings
+                li
+                  a(href="#") Checkin
+                li
+                  a(href="#") Hotel
+                li
+                  a(href="#") Cars

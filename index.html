@@ -1,24 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CO">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airline</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <container class="f-width">
-      <header>
-        <container class="m-width">
-          <nav>
-            <div class="nav_logo">
-              <h2>AIRLINE</h2>
+    <header>
+      <div class="m-width">
+        <nav>
+          <div class="nav__logo">
+            <h1>AIRLINE</h1>
+          </div>
+          <div class="nav__menu">
+            <ul>
+              <li><a href="#">en<img src="assets/img/arrow-down.svg"></a>
+                <ul class="nav_menu--drop-menu">
+                  <li><a href="#">RU - Russian</a></li>
+                  <li><a href="#">DE - German</a></li>
+                  <li><a href="#">FR - French</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header__content">
+          <h2>Visit Canada with prices from $800</h2>
+          <p>Prepare your bags and forget your worries to start enjoying your holidays in this fantastic country</p><a class="button">Buy now</a>
+        </div>
+      </div>
+      <main>
+        <div class="m-width">
+          <h3>Offers</h3>
+          <section>
+            <article class="card" id="trip-moscow">
+              <figure><img src="assets/img/moscow.jpg"></figure>
+              <p class="card__title">Trip to Moscow</p>
+              <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
+              <p class="card__price">Price $600,86</p>
+            </article>
+            <article class="card" id="trip-puerto_rico">
+              <figure><img src="assets/img/puerto-rico.jpg"></figure>
+              <p class="card__title">Trip to Puerto Rico</p>
+              <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
+              <p class="card__price">Price $600,86</p>
+            </article>
+            <article class="card" id="trip-honduras">
+              <figure><img src="assets/img/honduras.jpg"></figure>
+              <p class="card__title">Trip to Honduras</p>
+              <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
+              <p class="card__price">Price $600,86</p>
+            </article>
+            <section class="card-chosen">
+              <p id="chosen-dest"></p>
+              <div class="card-chosen__divider"></div>
+              <p class="card_chosen__text"></p>
+            </section>
+          </section>
+          <section class="trip-menu">
+            <h4>Menu</h4>
+            <ul class="trip-menu__ul">
+              <li><a href="#">Check-in</a></li>
+              <li><a href="#">Manage My Booking</a></li>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Members</a></li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="m-width">
+          <section class="social-nav">
+            <p class="social-nav__title">Follow us</p>
+            <div class="social-nav__icons">
+              <figure><img class="social-nav__icons--facebook" src="assets/img/facebook.svg"></figure>
+              <figure><img class="social-nav__icons--instagram" src="assets/img/instagram.svg"></figure>
+              <figure><img class="social-nav__icons--twitter" src="assets/img/twitter.svg"></figure>
             </div>
-            <div class="nav_menu"></div>
-          </nav>
-        </container>
-      </header>
-    </container>
+          </section>
+          <section class="footer-nav">
+            <div class="footer-nav__menu">
+              <p class="footer-nav__menu__title">About Us</p>
+              <p class="footer-nav__menu__text">We want to help passengers to reach their destinations.</p>
+            </div>
+            <div class="footer-nav_menu">
+              <p class="footer-nav__menu__title">Explore</p>
+              <ul class="footer-nav__menu__ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav__menu">
+              <p class="footer-nav__menu__title">Information</p>
+              <ul class="footer-nav__menu__ul">
+                <li><a href="#">More search</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav__menu">
+              <p class="footer-nav__menu__title">Services</p>
+              <ul class="footer-nav__menu__ul">
+                <li><a href="#">Manage My Bookings</a></li>
+                <li><a href="#">Checkin</a></li>
+                <li><a href="#">Hotel</a></li>
+                <li><a href="#">Cars</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </header>
   </body>
 </html>
