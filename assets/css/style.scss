@@ -1,0 +1,19 @@
+/*1. ROOT ========================= */
+
+:root {
+	--dark-blue: #0a2463;
+	--dark-cyan: #247ba0;
+	--dark-gray: #605f5e;
+	--main-gray: #707070;
+	--main-red: #fb3640;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}

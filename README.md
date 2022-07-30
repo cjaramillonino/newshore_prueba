@@ -11,3 +11,6 @@ Prueba de programación para Newshore.
 - ✨ HTML
 - 💣 CSS
 - ❤️ Love
+
+- 👉🏽 BEM
+- 👌 SASS
