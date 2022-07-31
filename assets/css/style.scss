@@ -1,11 +1,22 @@
+/*
+
+1. Root
+2. Header
+3. Main
+4. Footer
+
+*/
+
 /* 1. ROOT ========================= */
 
 :root {
+	--black: #000000;
 	--dark-blue: #0a2463;
 	--dark-cyan: #247ba0;
 	--dark-gray: #605f5e;
 	--main-gray: #707070;
 	--main-red: #fb3640;
+	--white: #ffffff;
 }
 
 * {
@@ -14,11 +25,15 @@
 	padding: 0;
 }
 
-body {
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
 	font-family: 'Roboto', sans-serif;
 }
 
 div.m-width {
+	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
 	max-width: 1200px;
 	padding: 30px;
@@ -28,20 +43,38 @@ div.m-width {
 /* 2. HEADER ========================= */
 
 header {
+	background-image: url('../img/plane.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
-	height: auto;
+	flex-direction: column;
+	height: 400px;
 	max-height: 475px;
 	position: relative;
 	width: 100%;
 
 	div.m-width {
+		justify-content: space-between;
+		flex-direction: column;
+		height: auto;
 		padding-top: 16px;
 	}
 
 	nav {
 		display: flex;
+		justify-content: space-between;
 		height: auto;
 		max-height: 70px;
+		width: 100%;
+
+		.nav__logo {
+			color: var(--white);
+			font-size: 3.6rem;
+		}
+	}
+
+	div.header__content {
 		width: 100%;
 	}
 }
