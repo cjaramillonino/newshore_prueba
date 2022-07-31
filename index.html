@@ -24,6 +24,8 @@
                   <li><a href="#">FR - French</a></li>
                 </ul>
               </li>
+            </ul>
+            <ul class="nav__menu--main">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Destinations</a></li>
@@ -38,38 +40,40 @@
       </div>
     </header>
     <main>
-      <div class="m-width">
-        <div class="main__title">
-          <h3>Offers</h3><span class="main__title--bar"></span>
-        </div>
-        <section class="card-container">
-          <article class="card moscow" id="trip-moscow">
-            <div class="card__container">
-              <p class="card__title">Trip to Moscow</p>
-              <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
-              <p class="card__price">Price $600,86</p>
-            </div>
-          </article>
-          <article class="card puerto-rico" id="trip-puerto_rico">
-            <div class="card__container">
-              <p class="card__title">Trip to Puerto Rico</p>
-              <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
-              <p class="card__price">Price $600,86</p>
-            </div>
-          </article>
-          <article class="card honduras" id="trip-honduras">
-            <div class="card__container">
-              <p class="card__title">Trip to Honduras</p>
-              <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
-              <p class="card__price">Price $600,86</p>
-            </div>
-          </article>
+      <div class="main__title">
+        <h3>Offers</h3><span class="main__title--bar"></span>
+      </div>
+      <section class="main__container">
+        <div class="card-container">
+          <div class="card-container__content">
+            <article class="card moscow" id="trip-moscow">
+              <div class="card__container">
+                <p class="card__title">Trip to Moscow</p>
+                <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
+                <p class="card__price">Price $600,86</p>
+              </div>
+            </article>
+            <article class="card puerto-rico" id="trip-puerto_rico">
+              <div class="card__container">
+                <p class="card__title">Trip to Puerto Rico</p>
+                <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
+                <p class="card__price">Price $600,86</p>
+              </div>
+            </article>
+            <article class="card honduras" id="trip-honduras">
+              <div class="card__container">
+                <p class="card__title">Trip to Honduras</p>
+                <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
+                <p class="card__price">Price $600,86</p>
+              </div>
+            </article>
+          </div>
           <section class="card-chosen">
-            <p id="chosen-dest"></p>
+            <p id="chosen-dest">Trip to Honduras</p>
             <div class="card-chosen__divider"></div>
             <p class="card_chosen__text">Chosen destination</p>
           </section>
-        </section>
+        </div>
         <section class="trip-menu">
           <h4>Menu</h4>
           <ul class="trip-menu__ul">
@@ -80,7 +84,7 @@
             <li><a href="#">Members</a></li>
           </ul>
         </section>
-      </div>
+      </section>
     </main>
     <footer>
       <div class="m-width">

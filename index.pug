@@ -26,6 +26,7 @@ html(lang="es-CO")
                     a(href="#") DE - German
                   li
                     a(href="#") FR - French
+            ul.nav__menu--main
               li
                 a(href="#") Home
               li
@@ -41,31 +42,32 @@ html(lang="es-CO")
             Prepare your bags and forget your worries to start enjoying your holidays in this fantastic country
           a.button Buy now
     main
-      .m-width
-        .main__title
-          h3 Offers
-          span.main__title--bar
-        section.card-container
-          article.card.moscow#trip-moscow
-            .card__container
-              p.card__title Trip to Moscow
-              p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
-                a.card__info__link(href="#") more
-              p.card__price Price $600,86
-          article.card.puerto-rico#trip-puerto_rico
-            .card__container
-              p.card__title Trip to Puerto Rico
-              p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
-                a.card__info__link(href="#") more
-              p.card__price Price $600,86
-          article.card.honduras#trip-honduras
-            .card__container
-              p.card__title Trip to Honduras
-              p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
-                a.card__info__link(href="#") more
-              p.card__price Price $600,86
+      .main__title
+        h3 Offers
+        span.main__title--bar
+      section.main__container
+        .card-container
+          .card-container__content
+            article.card.moscow#trip-moscow
+              .card__container
+                p.card__title Trip to Moscow
+                p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
+                  a.card__info__link(href="#") more
+                p.card__price Price $600,86
+            article.card.puerto-rico#trip-puerto_rico
+              .card__container
+                p.card__title Trip to Puerto Rico
+                p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
+                  a.card__info__link(href="#") more
+                p.card__price Price $600,86
+            article.card.honduras#trip-honduras
+              .card__container
+                p.card__title Trip to Honduras
+                p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
+                  a.card__info__link(href="#") more
+                p.card__price Price $600,86
           section.card-chosen
-            p#chosen-dest
+            p#chosen-dest Trip to Honduras
             .card-chosen__divider
             p.card_chosen__text Chosen destination
         section.trip-menu
