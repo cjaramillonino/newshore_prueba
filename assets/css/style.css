@@ -30,6 +30,14 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
 div.m-width {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,4 +98,248 @@ header nav .nav__logo {
 }
 header div.header__content {
   width: 100%;
+}
+header div.header__content h2 {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+header div.header__content p {
+  color: var(--white);
+  font-size: 1.4rem;
+}
+header div.header__content a.button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: var(--main-red);
+  border-radius: 30px;
+  color: var(--white);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1.8rem;
+  margin-top: 50px;
+  padding: 15px 72px;
+  text-transform: uppercase;
+  width: auto;
+}
+
+/* 3. MAIN ========================= */
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .m-width {
+  padding-bottom: 65px;
+}
+main .main__title {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .main__title h3 {
+  color: var(--dark-cyan);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 15px;
+}
+main .main__title span.main__title--bar {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: var(--dark-gray);
+  height: 2px;
+  opacity: 0.4;
+  width: 100%;
+}
+main section.card-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  padding: 30px 0;
+}
+main section.card-container article.card {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid rgba(10, 36, 99, 0.5);
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.29);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.29);
+  color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+main section.card-container article.card .card__container {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 9px 16px 13px;
+}
+main section.card-container article.card .card__container .card__title {
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding-bottom: 17px;
+}
+main section.card-container article.card .card__container .card__info {
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+main section.card-container article.card .card__container .card__info .card__info__link {
+  color: inherit;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+main section.card-container article.card .card__container .card__price {
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: right;
+}
+main section.card-container .moscow {
+  background-image: url(../img/moscow.jpg);
+}
+main section.card-container .puerto-rico {
+  background-image: url(../img/puerto-rico.jpg);
+}
+main section.card-container .honduras {
+  background-image: url(../img/honduras.jpg);
+}
+main section.trip-menu {
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.19);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+  padding-top: 30px;
+}
+main section.trip-menu h4 {
+  color: var(--dark-gray);
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
+}
+main section.trip-menu ul.trip-menu__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+main section.trip-menu ul.trip-menu__ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 100%;
+}
+main section.trip-menu ul.trip-menu__ul li:last-child {
+  border-bottom: none;
+}
+main section.trip-menu ul.trip-menu__ul li a {
+  color: var(--dark-gray);
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 16px 30px 16px 55px;
+  position: relative;
+  width: 100%;
+}
+main section.trip-menu ul.trip-menu__ul li a::before {
+  border-color: transparent transparent transparent var(--dark-cyan);
+  border-style: solid;
+  border-width: 7.5px 0 7.5px 15px;
+  content: "";
+  height: 0;
+  left: 30px;
+  position: absolute;
+  top: 20px;
+  width: 0;
+}
+
+/* 4. FOOTER ========================= */
+footer {
+  background-color: var(--dark-blue);
+  padding: 30px 0 50px;
+}
+footer .m-width {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer section {
+  width: 100%;
+}
+footer section .social-nav__title {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+footer section .social-nav__icons {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+footer section .social-nav__icons figure {
+  width: 30px;
+}
+footer section .social-nav__icons figure img {
+  width: 100%;
+}
+footer .footer-nav__menu {
+  width: 100%;
+}
+footer .footer-nav__menu .footer-nav__menu__title {
+  color: var(--main-red);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+footer .footer-nav__menu .footer-nav__menu__text {
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+footer .footer-nav__menu .footer-nav__menu__ul li {
+  margin-bottom: 12px;
+}
+footer .footer-nav__menu .footer-nav__menu__ul li a {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 400;
 }

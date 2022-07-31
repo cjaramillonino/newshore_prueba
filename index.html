@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airline</title>
+    <title>Airline | Your next Destination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
@@ -36,30 +39,35 @@
     </header>
     <main>
       <div class="m-width">
-        <h3>Offers</h3>
-        <section>
-          <article class="card" id="trip-moscow">
-            <figure><img src="assets/img/moscow.jpg"></figure>
-            <p class="card__title">Trip to Moscow</p>
-            <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
-            <p class="card__price">Price $600,86</p>
+        <div class="main__title">
+          <h3>Offers</h3><span class="main__title--bar"></span>
+        </div>
+        <section class="card-container">
+          <article class="card moscow" id="trip-moscow">
+            <div class="card__container">
+              <p class="card__title">Trip to Moscow</p>
+              <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
+              <p class="card__price">Price $600,86</p>
+            </div>
           </article>
-          <article class="card" id="trip-puerto_rico">
-            <figure><img src="assets/img/puerto-rico.jpg"></figure>
-            <p class="card__title">Trip to Puerto Rico</p>
-            <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
-            <p class="card__price">Price $600,86</p>
+          <article class="card puerto-rico" id="trip-puerto_rico">
+            <div class="card__container">
+              <p class="card__title">Trip to Puerto Rico</p>
+              <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
+              <p class="card__price">Price $600,86</p>
+            </div>
           </article>
-          <article class="card" id="trip-honduras">
-            <figure><img src="assets/img/honduras.jpg"></figure>
-            <p class="card__title">Trip to Honduras</p>
-            <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
-            <p class="card__price">Price $600,86</p>
+          <article class="card honduras" id="trip-honduras">
+            <div class="card__container">
+              <p class="card__title">Trip to Honduras</p>
+              <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.<a class="card__info__link" href="#">more</a></p>
+              <p class="card__price">Price $600,86</p>
+            </div>
           </article>
           <section class="card-chosen">
             <p id="chosen-dest"></p>
             <div class="card-chosen__divider"></div>
-            <p class="card_chosen__text"></p>
+            <p class="card_chosen__text">Chosen destination</p>
           </section>
         </section>
         <section class="trip-menu">
@@ -89,7 +97,7 @@
             <p class="footer-nav__menu__title">About Us</p>
             <p class="footer-nav__menu__text">We want to help passengers to reach their destinations.</p>
           </div>
-          <div class="footer-nav_menu">
+          <div class="footer-nav__menu">
             <p class="footer-nav__menu__title">Explore</p>
             <ul class="footer-nav__menu__ul">
               <li><a href="#">Home</a></li>

@@ -4,7 +4,10 @@ html(lang="es-CO")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Airline
+    title Airline | Your next Destination
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet")
     link(rel="stylesheet", href="assets/css/style.css")
   body
     header
@@ -39,33 +42,32 @@ html(lang="es-CO")
           a.button Buy now
     main
       .m-width
-        h3 Offers
-        section
-          article.card#trip-moscow
-            figure
-              img(src="assets/img/moscow.jpg")
-            p.card__title Trip to Moscow
-            p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
-              a.card__info__link(href="#") more
-            p.card__price Price $600,86
-          article.card#trip-puerto_rico
-            figure
-              img(src="assets/img/puerto-rico.jpg")
-            p.card__title Trip to Puerto Rico
-            p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
-              a.card__info__link(href="#") more
-            p.card__price Price $600,86
-          article.card#trip-honduras
-            figure
-              img(src="assets/img/honduras.jpg")
-            p.card__title Trip to Honduras
-            p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
-              a.card__info__link(href="#") more
-            p.card__price Price $600,86
+        .main__title
+          h3 Offers
+          span.main__title--bar
+        section.card-container
+          article.card.moscow#trip-moscow
+            .card__container
+              p.card__title Trip to Moscow
+              p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
+                a.card__info__link(href="#") more
+              p.card__price Price $600,86
+          article.card.puerto-rico#trip-puerto_rico
+            .card__container
+              p.card__title Trip to Puerto Rico
+              p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
+                a.card__info__link(href="#") more
+              p.card__price Price $600,86
+          article.card.honduras#trip-honduras
+            .card__container
+              p.card__title Trip to Honduras
+              p.card__info Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nulla mauris.
+                a.card__info__link(href="#") more
+              p.card__price Price $600,86
           section.card-chosen
             p#chosen-dest
             .card-chosen__divider
-            p.card_chosen__text
+            p.card_chosen__text Chosen destination
         section.trip-menu
           h4 Menu
           ul.trip-menu__ul
@@ -95,7 +97,7 @@ html(lang="es-CO")
           .footer-nav__menu
             p.footer-nav__menu__title About Us
             p.footer-nav__menu__text We want to help passengers to reach their destinations.
-          .footer-nav_menu
+          .footer-nav__menu
             p.footer-nav__menu__title Explore
             ul.footer-nav__menu__ul
               li
