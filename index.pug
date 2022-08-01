@@ -1,5 +1,5 @@
 doctype html
-html(lang="es-CO")
+html(lang="en")
   head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
@@ -16,7 +16,7 @@ html(lang="es-CO")
           h1.nav__logo AIRLINE
           .nav__menu
             ul
-              li
+              li.nav_menu--drop
                 a(href="#") en
                   img(src="assets/img/arrow-down.svg")
                 ul.nav_menu--drop-menu
@@ -28,7 +28,7 @@ html(lang="es-CO")
                     a(href="#") FR - French
             ul.nav__menu--main
               li
-                a(href="#") Home
+                a(href="#").selected Home
               li
                 a(href="#") About
               li
@@ -128,3 +128,4 @@ html(lang="es-CO")
                 a(href="#") Hotel
               li
                 a(href="#") Cars
+    script(src="assets/js/script.js") 
